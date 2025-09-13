@@ -4,7 +4,7 @@
 export default async function handler(request, response) {
   const { input_text } = await request.json();
   const HF_TOKEN = process.env.HF_TOKEN; // Gets your token from Vercel
-  const API_URL = "https://medalami1-my-ai-api.hf.space/predict/";
+  const API_URL = "https://medalami1-my-ai-api.hf.space";
 
   try {
     const hf_response = await fetch(API_URL, {
